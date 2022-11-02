@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="Hippo's HomePage"/>
+    <meta property="og:description" content="Welcome to my HomePage"/>
+    <meta property="og:image"
+          content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FAgCpZ%2FbtrQdAqzGVq%2F9rJvUiogZKw3gevD9GOc8K%2Fimg.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <title>Hippo</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        * {
+            font-family: "Pretendard", serif;
+        }
+        header {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        body {
+            background-color: #FFF4D7;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 1px solid black;
+            background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FAgCpZ%2FbtrQdAqzGVq%2F9rJvUiogZKw3gevD9GOc8K%2Fimg.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main {
+            color: #000000;
+            font-size: 18px;
+            size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sub {
+            color: #000000;
+            font-size: 14px;
+            font-weight: 400;
+            size: 14px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap > a {
+            width: 320px;
+            height: 59px;
+            border-radius: 16px;
+            background-color: white;
+            margin-bottom: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border: 1px solid #353432;
+        }
+
+        .wrap > a:hover {
+            background-color: #ffebb5;
+        }
+
+        .wrap > a:hover span:nth-child(1) {
+            display: none;
+        }
+
+        .wrap > a span:nth-child(2) {
+            display: none;
+        }
+
+        .wrap > a:hover span:nth-child(2) {
+            display: flex;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<header>
+    <button type="button" class="btn btn-outline-secondary" onclick="location.href='/'">Home</button>
+</header>
+<div class="wrap">
+    <div class="profile"></div>
+    <h1 class="main">Hippo</h1>
+    <p class="sub">짱 영주</p>
+    <a target="_blank" href="https://github.com/Youngju-Jang">Git Hub</a>
+    <a target="_blank" href="https://joj1043.tistory.com/">티스토리</a>
+    <a target="_blank" onclick="location.href='/fanbook'">김윤아 방명록</a>
+    <a target="_blank" onclick="location.href='/bucketList'">버킷리스트</a>
+    <a target="_blank" onclick="location.href='/movies'">최애영화들</a>
+    <a target="_blank" href="#">
+        <span>email</span>
+        <span>joj1043@nate.com</span>
+    </a>
+</div>
+</body>
+</html>
